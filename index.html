@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Bookmark landing page</title>
+  <link rel="stylesheet" href="./sass/index.css">
+  
+</head>
+<body>
+  <div id="header">
+    <img src="./images/logo-bookmark.svg" alt="">
+    <ul>
+      <a href="#sec-b"> Features</a>
+      <a href="#sec-d">Pricing</a>
+      <a href="#sec-e">Contact</a>
+      <button>Login</button>
+    </ul>
+  </div>
+
+    
+  <div id="sec-a">
+    <div class="a-cont">
+     <h2>A Simple Bookmark Manager</h2>
+
+      <p>A clean and simple interface to organize your favourite <br> websites. Open a new 
+      browser tab and see your sites <br> load instantly. Try it for free.</p>
+    
+      <div class="btn">
+        <button id="btn1"> Get it on Chrome</button>
+      <button>Get it on Firefox</button>
+      </div>
+     
+    </div>
+    <img src="./images/illustration-hero.svg" alt="">
+
+    <div class="background">
+    
+    </div>
+
+  </div>  
+
+<div id="sec-b">
+
+  <h2>Features</h2>
+  <p>  Our aim is to make it quick and easy for you to access your favourite websites. 
+    Your bookmarks sync between your devices so you can access them on the go.
+  </p>
+  <div id="tabs">
+     <div class="background-2">
+      
+    </div> 
+    <div id="tabs-header">
+        <h3 class="hh1" onclick="tabSwitch('SB')" >Simple Bookmarking</h3>
+        <h3 class="hh2" onclick="tabSwitch('SS')">Speedy Searching</h3>
+        <h3 class="hh3" onclick="tabSwitch('ES')"> Easy Sharing</h3>
+    </div>
+
+    <div class="tab-content">
+
+      
+      <img id="tab-img" src="./images/illustration-features-tab-1.svg" alt="">
+
+      <div class="content-para">
+
+        <h2 id="tab-h" > Bookmark in one click</h2>
+        <p id="tab-p">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.
+        </p>
+        <button>More Info</button>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="sec-c">
+  <h2>  Download the extension</h2>
+  <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+    got a favourite you’d like us to prioritize.</p>
+
+  <div class="c-content">
+    <div class="boxes" >
+      <img src="./images/logo-chrome.svg" alt="">
+      <span>Add to Chrome</span>
+      <p> Minimum version 62</p>
+      <button>Add & Install Extension</button>
+    </div>
+    <div class="boxes" style="top: 25px;">
+      <img src="./images/logo-firefox.svg" alt="">
+      <span> Add to Firefox</span>
+      <p> Minimum version 56</p>
+      <button>Add & Install Extension</button>
+    </div>
+    <div class="boxes" style="top: 50px;">
+      <img src="./images/logo-opera.svg" alt="">
+      <span>Add to Opera</span>
+      <p> Minimum version 66</p>
+      <button>Add & Install Extension</button>
+    </div>
+  </div>
+</div>
+
+<div id="sec-d">
+  <h2>Frequently Asked Questions</h2>
+  <p>Here are some of our FAQs. If you have any other questions you’d like 
+    answered please feel free to email us.</p>
+    <div class="d-content" id="d-content">
+
+      <div class="QA" onclick="openHeimer(1)" id="QAs">
+        <h5> What is Bookmark?</h5> <img src="./images/icon-arrow.svg"  alt="het">
+        <p>Lorem ipsum dolor sii amet, consectetur adipiscing elit. Fusce tincidunt 
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
+
+      <div class="QA" onclick="openHeimer(3)">
+        <h5>How can I request a new browser?</h5> <img src="./images/icon-arrow.svg"  alt="">
+        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
+
+      <div class="QA" onclick="openHeimer(5)">
+        <h5>Is there a mobile app?</h5> <img src="./images/icon-arrow.svg"  alt="">
+        <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.</p>
+      </div>
+
+      <div class="QA" onclick="openHeimer(7)">
+        <h5>What about other Chromium browsers?</h5> <img src="./images/icon-arrow.svg"  alt="">
+        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit</p>
+      </div>
+      
+    </div>
+    <button>More info</button>
+</div>
+
+<div id="sec-e">
+  <h6>35,000+ already joined</h6>
+  <h1>Stay up-to-date with what we’re doing</h1>
+  <form class="infobox">
+    <input type="email" id="em" placeholder="exmaple@gmail.com" required> <button type="submit"  >Contact Us</button>
+
+  </form>
+</div>
+  
+<div class="footer">
+  <img src="./images/logo-bookmark.svg" style="filter:invert(1);" alt="">
+  <ul>
+    <li>Features</li>
+    <li>Pricing</li>
+    <li>Contact</li>
+  </ul>
+  <img style="width: 4vmin;" src="./images/icon-facebook.svg" alt="">
+  <img src="./images/icon-twitter.svg" alt="">
+</div>
+<script src="./sass/venila.js" >
+
+ 
+
+</script>
+</body>
+</html>
