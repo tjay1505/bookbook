@@ -12,16 +12,28 @@
 </head>
 <body>
   <div id="header">
-    <img src="./images/logo-bookmark.svg" alt="">
+    <img src="./images/logo-bookmark.svg" id="logobook" alt="">
     <ul>
       <a href="#sec-b"> Features</a>
       <a href="#sec-d">Pricing</a>
       <a href="#sec-e">Contact</a>
       <button>Login</button>
     </ul>
+
+    <img src="./images/icon-hamburger.svg" id="hambuger" onclick="openJK()" alt="">
   </div>
 
-    
+  <div id="MenuBox">
+    <ul>
+      <li onclick="JKclose()"><a href="#sec-b" >Features</a></li>
+      <li onclick="JKclose()"><a href="#sec-c">Pricing</a></li>
+      <li onclick="JKclose()"><a href="#sec-d">FQ & A</a></li>
+      <li onclick="JKclose()"><a href="#footere">Contact</a></li>
+
+    </ul>
+
+  </div>
+
   <div id="sec-a">
     <div class="a-cont">
      <h2>A Simple Bookmark Manager</h2>
@@ -37,9 +49,9 @@
     </div>
     <img src="./images/illustration-hero.svg" alt="">
 
-    <div class="background">
+    <!-- <div class="background">
     
-    </div>
+    </div> -->
 
   </div>  
 
@@ -50,9 +62,9 @@
     Your bookmarks sync between your devices so you can access them on the go.
   </p>
   <div id="tabs">
-     <div class="background-2">
+     <!-- <div class="background-2">
       
-    </div> 
+    </div>  -->
     <div id="tabs-header">
         <h3 class="hh1" onclick="tabSwitch('SB')" >Simple Bookmarking</h3>
         <h3 class="hh2" onclick="tabSwitch('SS')">Speedy Searching</h3>
@@ -91,13 +103,13 @@
       <p> Minimum version 62</p>
       <button>Add & Install Extension</button>
     </div>
-    <div class="boxes" style="top: 25px;">
+    <div class="boxes boxtwo">
       <img src="./images/logo-firefox.svg" alt="">
       <span> Add to Firefox</span>
       <p> Minimum version 56</p>
       <button>Add & Install Extension</button>
     </div>
-    <div class="boxes" style="top: 50px;">
+    <div class="boxes boxthree">
       <img src="./images/logo-opera.svg" alt="">
       <span>Add to Opera</span>
       <p> Minimum version 66</p>
@@ -152,7 +164,7 @@
   </form>
 </div>
   
-<div class="footer">
+<div class="footer" id="footere">
   <img src="./images/logo-bookmark.svg" style="filter:invert(1);" alt="">
   <ul>
     <li>Features</li>

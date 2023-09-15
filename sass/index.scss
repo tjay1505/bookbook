@@ -21,7 +21,6 @@ body{
     top: 0;
     img{
         //border: 1px solid;
-        color: #000;
         margin: 0% 5%;
         
     }
@@ -57,6 +56,10 @@ body{
             color: hsl(0, 94%, 66%);
             
         }
+        
+    }
+    #hambuger{
+        display: none;
     }
 }
 
@@ -93,14 +96,14 @@ body{
             align-items: center;
             margin-top: 6%;
             width: 100%;
-            height: 5vmin;
+            height: 10%;
             button{
                 margin: 0 3% 0 0%;
                 height: 100%;
                 width: 35%;
                 border: none;
                 border-radius: 4px;
-                box-shadow: 1px 2px 10px 2px grey;
+                box-shadow: 1px 2px 10px 2px rgb(188, 188, 188);
             }
             #btn1{
                 background-color: hsl(231, 69%, 60%);
@@ -176,7 +179,7 @@ body{
                 font-size: medium;
                 cursor: pointer;
                 padding-bottom: 3%;
-                color: rgb(110, 110, 110);
+                //color: rgb(110, 110, 110);
             }
             h3:hover{
                 color: hsl(0, 94%, 66%);
@@ -234,6 +237,7 @@ body{
 }
 .adding-border{
     border-bottom: 3px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
 }
 #sec-c{
     display: flex;
@@ -253,8 +257,14 @@ body{
         justify-content: center;
         width: 80%;
         height: 60vmin;
+        .boxtwo{
+            top: 25px;
+        }
+        .boxthree{
+            top: 50px;
+        }
         .boxes{
-            box-shadow: 1px 2px 17px 1px grey;
+            box-shadow: 1px 2px 20px 0.5px rgb(188, 188, 188);
             width: 15%;
             height: 60%;
             border-radius: 10px;
@@ -422,6 +432,176 @@ body{
             margin-right: 2%;
             list-style: none;
             color: #fff;
+        }
+    }
+}
+
+// for mobile view 
+@media only screen and (max-width : 600px){
+    #header{
+        
+        ul{
+            display: none;
+        }
+        #logobook{
+            width: 40%;
+        }
+        #hambuger{
+            width: 6%;
+            display: block;
+        }
+    }
+    //sec-a
+    #sec-a{
+        flex-direction: column-reverse;
+        img{
+            width: 100%;
+        }
+        .a-cont{
+            width: 100%;
+            margin: 0% 0%;
+            text-align: center;
+            align-items: center;
+            h2{
+                width: 100%;
+                font-size: xx-large;
+            }
+            .btn{
+                
+                justify-content: center;
+                height: 7vmin;
+            }
+        }
+    }
+    //sec-b
+    #sec-b{
+        h2{
+            margin-top: 4%;
+        }
+        p{
+            margin-top: 4%;
+            width: 70%;
+            
+        }
+        #tabs{
+            height: auto;
+            #tabs-header{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                //border: 1px solid red;
+                h3{
+                    margin-bottom: 2%;
+                    padding: 2%;
+                    
+                    //border-top: 0.5px solid;
+                
+                }
+            }
+            .tab-content{
+                flex-direction: column;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+                .content-para{
+                    width: 100%;
+                    margin: 0;
+                    align-items: center;
+                    text-align: center;
+                }
+                button{
+                    display: none;
+                }
+            }
+        }
+
+       
+    }
+    #sec-c{
+        margin-top: 5%;
+        height: max-content;
+        p{
+            width: 80%;
+            margin-bottom: 5%;
+        }
+        .c-content{
+            flex-direction: column;
+            height: auto;
+            .boxes{
+                width: 70%;
+                height: 340px;
+                margin-bottom: 4%;
+                
+            }
+        }
+    }
+    #sec-d{
+        margin-top: 20%;
+        p{
+            width: 80%;
+        }
+        .d-content{
+            width: 100%;
+        }
+        button{
+            width: 15%;
+        }
+    }
+    #sec-e{
+        h1{
+            width: 90%;
+        }
+        .infobox{
+            input{
+                width: 60%;
+            }
+            button{
+                width: 25%;
+            }
+        }
+    }
+    .footer{
+        font-size: small;
+    }
+}
+
+#MenuBox{
+    background-color: #d4d4d4be;
+    height: 0vh;
+    width: 100vw;
+    transition:  0.2s;
+    font-size: 0vmax;
+    position: sticky;
+    top:16vmin ;
+    ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        li{
+            font-size: 100%;
+            list-style: none;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                font-size: 100%;
+                text-decoration: none;
+            }            
+        }
+        li:hover{
+            background-color: hsl(231, 69%, 60%);
+            color: #fff;
+        }
+        
+        button{
+            width: 70%;
+            
         }
     }
 }

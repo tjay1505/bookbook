@@ -60,6 +60,23 @@ function openHeimer(w){
   console.log(z);
 }
 
+const menubox = document.getElementById('MenuBox')
+let MB = true
+function openJK(){
+  if(MB){
+    menubox.style.height = '35vh'
+    menubox.style.fontSize = '3vmax'
 
+  }
+  else{
+    menubox.style.height = '0'
+    menubox.style.fontSize = '0vmax'
+  }
+  MB = !MB
+}
+function JKclose(){
+  menubox.style.height = '0'
+  menubox.style.fontSize = '0vmax'
+}
 
 
